@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function example() {
+            if (true) {
+                var x = 10;  // Function-scoped with hoisting
+                let y = 20;  // Block-scoped without hoisting
+            }
+
+            document.write(x);// Outputs 10 (var is function-scoped)
+
+            document.write(y); // ReferenceError: y is not defined (let is block-scoped)
+
+        }
+
+
+    </script>
+    <button onclick="example()">Click Here</button>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun()
+        {
+            var v = prompt("Enter your name ");
+            var firstLetter = v.slice(0,1);
+            var remainingLetter = v.slice(1,v.length);
+            var firstLetterCap = firstLetter.toUpperCase();
+            var remainingLetterCap = remainingLetter.toLowerCase();
+
+            document.write("Your Name is "+firstLetterCap+remainingLetterCap);
+
+        }
+    </script>
+    <button onclick="fun()">Click here</button>
+</body>
+</html>

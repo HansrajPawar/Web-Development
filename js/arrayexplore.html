@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [1,1,23,5,6];
+
+        let myArray = new Array("hello" , "How" ,"are",  "you")
+
+        var newArray = ["ravi","raj","pawar"];
+
+       function l()
+       {
+        document.write(array.length);
+       }
+
+       function seeElement()
+       {
+            for(let i = 0 ; i<array.length;i++)
+            {
+                document.write(array[i]+"</br>");
+            }
+            document.write("New Array </br>");
+            for (let Elements of myArray)
+            {
+                document.write(Elements+"</br>");
+            }
+            document.write("New Array </br>");
+            newArray.forEach(function(Element)
+            {
+                document.write(Element+"</br>");
+            })
+            
+       }
+    </script>
+
+    <button onclick="l()" >clear here to see length</button>
+    <br><br>
+
+    <button onclick="seeElement()" >clear here to see Elements</button>
+</body>
+</html>

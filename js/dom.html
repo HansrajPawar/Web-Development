@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .huge{
+            font-size: 10rem;;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hi" onclick="fun()">Hello </h1>
+
+    <h1>Hello</h1>
+
+    <input type="checkbox">
+
+    <button style="color: red;">Click Me</button>
+
+    <ul>
+      <li class="list">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="list">Second</li>
+      <li class="list">Third</li>
+    </ul>
+
+    <button style="background-color: rgb(227, 117, 117);" onclick="fun();">
+        Click me 
+    </button>
+
+    <script>
+        function fun()
+        {
+            hi.innerHTML = "good bye babe ";
+            document.querySelectorAll(".list")[1].style.color="red";
+            document.querySelectorAll("button")[1].style.backgroundColor="green";
+
+            document.querySelectorAll("h1")[1].classList.add("huge");
+        }       
+    </script>
+</body>
+</html>

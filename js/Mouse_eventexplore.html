@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+    <h1 onmouseover="this.style.color='grey'" onmouseout="this.style.color='red'">HI</h1>
+
+    <h1 onmouseover="this.style.color='grey'" onmouseout="this.style.color='red'">hi hansraj here , hover !!!! </h1>
+
+    <h1><b><br><br>Mouse up and down</b></h1>
+    <h2 id="id1" onmousedown="fun2()" onmouseup="fun1()">Click here ......!!!</h2>
+
+
+
+    <h1><b><br><br>Changing the backGround color </b></h1>
+    <h2 id="id2" onmousedown="fun3()" onmouseup="fun4()">Click here ......!!!</h2>
+    <script>
+        function fun1()
+        {
+            document.getElementById("id1").style.color="red";
+        }
+        function fun2()
+        {
+            document.getElementById("id1").style.color="green";
+        }
+        function fun3()
+        {
+            document.getElementById("id2").style.backgroundColor="grey";
+        }
+        function fun2()
+        {
+            document.getElementById("id2").style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+
+</html>
