@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=<device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		button:hover
+		{
+			background-color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Event Registration</h1>
+	<h2><a href="#id1">See Video section</a></h2>
+	<form>
+		<label for="name">Name :- </label>
+		<br><br>
+		<input type="text" id="name">
+		<br><br>
+		<label for="password">Password :- </label>
+		<br><br>
+		<input type="password" id="password">
+		<br><br>
+		<label for="no">Mobile :- </label>
+		<br><br>
+		<input type="tel" id="no">
+		<br><br>
+
+		<label for="select">Occupation :- </label>
+		<br><br>
+		<select name="selector1" id="select">
+			<option value="student">student</option>
+			<option value="professional">professional</option>
+			<option value="other">other</option>
+		</select>
+		<br><br>
+		<fieldset cols="50">
+			<legend>Tpoic of interest</legend>
+			<label for="html">html</label>
+			<input type="checkbox" id="html"><br><br>
+			<label for="css">css</label>
+			<input type="checkbox" id="css"><br><br>
+			<label for="javascript">javascript</label>
+			<input type="checkbox" id="javascript"><br><br>
+		</fieldset><br>
+		<label for="comment"></label>
+		<textarea name="comment" id="comment" cols="50" rows="5" placeholder="enter your comment"></textarea>
+		<br><br>
+
+		<details>
+			<summary>
+				Wanna read ...!
+			</summary>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur esse autem fuga sunt facilis
+				accusamus eum laboriosam, quam repudiandae odio voluptatibus dolor rem delectus obcaecati pariatur enim?
+				Vero, earum quod!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur esse autem fuga
+				sunt facilis accusamus eum laboriosam, quam repudiandae odio voluptatibus dolor rem delectus obcaecati
+				pariatur enim? Vero, earum quod!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+				esse autem fuga sunt facilis accusamus eum laboriosam, quam repudiandae odio voluptatibus dolor rem
+				delectus obcaecati pariatur enim? Vero, earum quod!
+			</p>
+		</details>
+		<br><br>
+		<secection id="id1">
+			<details>
+				<summary>
+					Wanna See 🙈 ...!
+				</summary>
+				<p>
+					<iframe width="500" height="300"
+						src="https://www.youtube.com/embed/fb4rgYbi84c?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD"
+						title="Project 2: HTML Media Project || Media tags, Modern HTML and iframes || Episode - 11"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</p>
+			</details>
+			<br><br>
+		</secection>
+		<button>submit</button>
+
+		<input type="reset">
+	</form>
+</body>
+
+</html>
